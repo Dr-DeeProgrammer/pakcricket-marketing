@@ -1,0 +1,90 @@
+/* Fonts and Basic Styling */
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Sections */
+.section {
+    padding: 40px 60px;
+}
+
+.section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: #008000;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 16px;
+    color: #333333;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.section li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Secondary Section Background */
+.secondary {
+    background-color: #F0FFF0;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/* Highlight Text */
+.highlight {
+    font-size: 18px;
+    color: #FF8C00;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Horizontal Divider */
+hr {
+    border: none;
+    border-top: 1px solid #CCCCCC;
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #096114;
+    border-top: 1px solid #CCCCCC;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #f8f8f8;
+}

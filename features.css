@@ -1,0 +1,95 @@
+
+
+/* General Styles */
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+.header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #008000;
+}
+.header p {
+    font-size: 16px;
+}
+
+/* Section Titles */
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: #008000;
+}
+
+/* Subheadings */
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #FF8C00;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+}
+
+/* Features Section */
+.features {
+    padding: 30px 50px;
+}
+.features ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+.features li {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 15px;
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 30px 20px;
+    
+}
+.cta p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.btn {
+    background-color: #008000;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+.btn:hover {
+    background-color: #FF8C00;
+    color: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #f5f1f1;
+    border-top: 1px solid #f4f1f1;
+    background-color: #096114;
+}

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PakCricket - Technology & Security</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* === CSS RESET & BASE STYLES === */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Inter, sans-serif;
+            color: #333333;
+            background-color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: Oswald, sans-serif;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p {
+            margin: 0 0 15px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #008000;
+        }
+
+        a:hover {
+            color: #FF8C00;
+        }
+
+        img {
+            border: none;
+        }
+
+        /* === CONTAINER & LAYOUT === */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* === HEADER & NAVIGATION === */
+        header {
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #CCCCCC;
+            position: relative;
+        }
+
+        .header-inner {
+            padding: 15px 0;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+
+        nav li {
+            display: inline;
+            margin-left: 25px;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .cta-nav {
+            background-color: #008000;
+            color: white;
+            padding: 8px 15px;
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            background-color: #F0FFF0;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #333333;
+            text-align: center;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* === TECH STACK === */
+        .tech-stack {
+            padding: 80px 0;
+        }
+
+        .tech-stack h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .stack-category {
+            margin-bottom: 40px;
+        }
+
+        .stack-category h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #008000;
+        }
+
+        .tech-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .tech-item {
+            background-color: #F0FFF0;
+            padding: 15px;
+            border: 1px solid #CCCCCC;
+        }
+
+        .tech-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* === SECURITY FEATURES === */
+        .security {
+            padding: 80px 0;
+            background-color: #F0FFF0;
+        }
+
+        .security h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .security-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #CCCCCC;
+        }
+
+        .security-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+
+        .security-icon {
+            margin-bottom: 20px;
+        }
+
+        /* === ARCHITECTURE DIAGRAM === */
+        .architecture {
+            padding: 80px 0;
+        }
+
+        .architecture h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .arch-diagram {
+            background-color: #F0FFF0;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #CCCCCC;
+        }
+
+        .arch-image {
+            max-width: 100%;
+        }
+
+        /* === SCALABILITY === */
+        .scalability {
+            padding: 80px 0;
+            background-color: #F0FFF0;
+        }
+
+        .scalability h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .scale-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .scale-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .scale-number {
+            font-size: 48px;
+            color: #FF8C00;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* === COMPLIANCE === */
+        .compliance {
+            padding: 80px 0;
+        }
+
+        .compliance h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .compliance-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .compliance-text {
+            padding: 30px;
+            background-color: #F0FFF0;
+        }
+
+        .compliance-text h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #008000;
+        }
+
+        /* === CTA SECTION === */
+        .cta-section {
+            padding: 80px 0;
+            background-color: #333333;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .btn-light {
+            background-color: #FFFFFF;
+            color: #333333;
+        }
+
+        /* === FOOTER === */
+        footer {
+            background-color: #333333;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .footer-column h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 8px;
+        }
+
+        .footer-column a {
+            color: #CCCCCC;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #CCCCCC;
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            .header-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            nav ul {
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            .stack-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tech-items {
+                grid-template-columns: 1fr;
+            }
+
+            .security-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .scale-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .compliance-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">PakCricket</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="scouts-clubs.html">For Scouts</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="download.html" class="cta-nav">Download App</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Built on Trust & Technology</h1>
+            <p>Enterprise-grade security and scalable architecture powering Pakistan's cricket revolution.</p>
+        </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="tech-stack">
+        <div class="container">
+            <h2>Our Technology Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-category">
+                    <h3>Frontend Development</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-name">Next.js</div>
+                            <div class="tech-desc">React Framework</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-name">TypeScript</div>
+                            <div class="tech-desc">Type Safety</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-name">Tailwind CSS</div>
+                            <div class="tech-desc">Styling</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-name">Material UI</div>
+                            <div class="tech-desc">Component Library</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-category">
+                    <h3>Backend & Infrastructure</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-name">Python</div>
+                            <div class="tech-desc">Backend Logic</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-name">FastAPI</div>
+                            <div class="tech-desc">API Framework</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-name">PostgreSQL</div>
+                            <div class="tech-desc">Database</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-name">Supabase</div>
+                            <div class="tech-desc">Backend as Service</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Security Features -->
+    <div class="security">
+        <div class="container">
+            <h2>Enterprise Security</h2>
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-icon">
+                        <img src="daniyal/images/encryption-icon.png" alt="Encryption" width="60" height="60" />
+                    </div>
+                    <h3>Data Encryption</h3>
+                    <p>All user data and match statistics encrypted both in transit and at rest using industry-standard
+                        protocols.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">
+                        <img src="daniyal/images/privacy-icon.png" alt="Privacy" width="60" height="60" />
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>Strict data privacy controls with user consent management and transparent data usage policies.
+                    </p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">
+                        <img src="/daniyal/images/secure-access-icon.jpg" alt="Secure Access" width="60" height="60" />
+                    </div>
+                    <h3>Secure Access</h3>
+                    <p>Multi-factor authentication and role-based access control for scouts, clubs, and administrators.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="architecture">
+        <div class="container">
+            <h2>Scalable Architecture</h2>
+            <div class="arch-diagram">
+                <img src="daniyal/images/cloud-architecture-diagram-img.png" alt="System Architecture Diagram" class="arch-image" />
+                <p>Cloud-native architecture designed to handle millions of users and real-time data processing</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scalability -->
+    <div class="scalability">
+        <div class="container">
+            <h2>Built for Scale</h2>
+            <div class="scale-grid">
+                <div class="scale-card">
+                    <div class="scale-number">10M+</div>
+                    <p>Users Supported</p>
+                </div>
+                <div class="scale-card">
+                    <div class="scale-number">99.9%</div>
+                    <p>Uptime SLA</p>
+                </div>
+                <div class="scale-card">
+                    <div class="scale-number">&lt;100ms</div>
+                    <p>Response Time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compliance -->
+    <div class="compliance">
+        <div class="container">
+            <h2>Compliance & Standards</h2>
+            <div class="compliance-content">
+                <div class="compliance-text">
+                    <h3>Data Protection</h3>
+                    <p>Our platform adheres to international data protection standards with regular security audits and
+                        vulnerability assessments.</p>
+                    <p>All personal data is processed with user consent and stored in secure, geographically redundant
+                        data centers.</p>
+                </div>
+                <div class="compliance-text">
+                    <h3>Transparency</h3>
+                    <p>We believe in complete transparency about how we handle your data. Regular security reports and
+                        clear privacy policies.</p>
+                    <p><a href="privacy-policy.html">Read our full Privacy Policy for detailed information</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="container">
+            <h3>Ready to Experience Secure Cricket Technology?</h3>
+            <p>Join a platform built on trust and cutting-edge technology</p>
+            <a href="privacy-policy.html" class="btn btn-light">Read Privacy Policy</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>PakCricket</h4>
+                    <p>Secure, scalable technology for Pakistan's cricket future.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="players.html">For Players</a></li>
+                        <li><a href="scouts-clubs.html">For Scouts & Clubs</a></li>
+                        <li><a href="fans-grounds.html">For Fans & Grounds</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="rankings.html">Rankings</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company & Legal</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="privacy-policy.html#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PakCricket. A Final Year Project - University of Faisalabad.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

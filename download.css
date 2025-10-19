@@ -1,0 +1,127 @@
+/* General Page Style */
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background-color: #F0FFF0;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Download Section */
+.download-section {
+    padding: 50px 20px;
+}
+
+.download-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+.download-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons {
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid #CCCCCC;
+}
+
+.btn-primary {
+    background-color: #008000;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #FF8C00;
+}
+
+.btn-secondary {
+    background-color: #008000 ;
+    color: #FFFFFF;
+}
+
+.btn-secondary:hover {
+    background-color:#FF8C00;
+}
+
+/* QR Code Section */
+.qr-section {
+    
+    padding: 30px 20px;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.qr-section img {
+    width: 150px;
+    height: 150px;
+}
+
+.qr-section p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333333;
+}
+
+/* Guide Section */
+.guide-section {
+    padding: 40px 30px;
+}
+
+.guide-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: #008000;
+    margin-bottom: 15px;
+}
+
+.guide-section ol {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: #096114;
+    padding: 20px;
+    font-size: 14px;
+    color: #f8f5f5;
+    border-top: 1px solid #CCCCCC;
+}

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PakCricket - For Scouts & Clubs</title>
+    <style>
+        /* === CSS RESET & BASE STYLES === */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Inter, sans-serif;
+            color: #333333;
+            background-color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: Oswald, sans-serif;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p {
+            margin: 0 0 15px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #008000;
+        }
+
+        a:hover {
+            color: #FF8C00;
+        }
+
+        img {
+            border: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* === HEADER & NAVIGATION === */
+        header {
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #CCCCCC;
+            position: relative;
+        }
+
+        .header-inner {
+            padding: 15px 0;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+
+        nav li {
+            display: inline;
+            margin-left: 25px;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .cta-nav {
+            background-color: #008000;
+            color: white;
+            padding: 8px 15px;
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            background-color: #F0FFF0;
+            padding: 80px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 175px;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: #008000;
+            color: white;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        /* === FEATURES GRID === */
+        .features-grid {
+            padding: 80px 0;
+        }
+
+        .features-grid h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .grid-3col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: #F0FFF0;
+            padding: 30px;
+            border: 1px solid #CCCCCC;
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #008000;
+        }
+
+        .feature-icon {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* === PROCESS STEPS === */
+        .process {
+            padding: 80px 0;
+            background-color: #FFFFFF;
+        }
+
+        .process h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .grid-4col {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-number {
+            background-color: #FF8C00;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 15px auto;
+            font-weight: bold;
+        }
+
+        /* === STATS SECTION === */
+        .stats {
+            padding: 80px 0;
+            background-color: #F0FFF0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #FF8C00;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #333333;
+        }
+
+        /* === TESTIMONIALS === */
+        .testimonials {
+            padding: 80px 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: #F0FFF0;
+            padding: 30px;
+            border-left: 4px solid #008000;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #333333;
+        }
+
+        /* === CTA SECTION === */
+        .cta-section {
+            padding: 80px 0;
+            background-color: #333333;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .cta-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .btn-light {
+            background-color: #FFFFFF;
+            color: #333333;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        /* === FOOTER === */
+        footer {
+            background-color: #333333;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .footer-column h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 8px;
+        }
+
+        .footer-column a {
+            color: #CCCCCC;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #CCCCCC;
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-3col {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-4col {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            nav ul {
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">PakCricket</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="scouts-clubs.html">For Scouts</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="download.html" class="cta-nav">Download App</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container hero-content">
+            <div>
+                <h1>Find Your Next Cricket Star</h1>
+                <p>Advanced scouting tools and data-driven insights to discover hidden talent across Pakistan. Our
+                    intelligent platform does the hard work so you can focus on building championship teams.</p>
+                <a href="pricing.html" class="btn btn-primary">Start Scouting Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="/daniyal/images/dashboard-img.webp" alt="Scouting Dashboard" width="400" height="300" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="features-grid">
+        <div class="container">
+            <h2>Powerful Scouting Tools</h2>
+            <div class="grid-3col">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="daniyal/images/filter-icon.png" alt="Filter Icon" width="50" height="50" />
+                    </div>
+                    <h3>Smart Player Filters</h3>
+                    <p>Filter players by batting average, bowling economy, location, age, and 20+ other performance
+                        metrics to find exact matches for your team needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="daniyal/images/ai-icon.webp" alt="AI Icon" width="50" height="50" />
+                    </div>
+                    <h3>AI-Powered Recommendations</h3>
+                    <p>Our scouting engine analyzes player patterns and suggests talents that fit your specific team
+                        requirements and playing style.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="daniyal/images/video-icon.jpg" alt="Video Icon" width="50" height="50" />
+                    </div>
+                    <h3>Match Video Library</h3>
+                    <p>Access recorded matches and highlight reels of potential recruits to evaluate skills before
+                        making contact.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Steps -->
+    <div class="process">
+        <div class="container">
+            <h2>How Scouting Works</h2>
+            <div class="grid-4col">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Set Criteria</h3>
+                    <p>Define your scouting model with weighted parameters</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Get Matches</h3>
+                    <p>Receive automated player recommendations</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Evaluate</h3>
+                    <p>Review stats, watch matches, analyze performance</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Connect</h3>
+                    <p>Reach out to promising talent directly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">85%</span>
+                    <span class="stat-label">Time Saved in Talent Discovery</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2.3x</span>
+                    <span class="stat-label">More Quality Players Found</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">94%</span>
+                    <span class="stat-label">Scout Satisfaction Rate</span>
+                </div>
+            </div>
+            <p class="text-center"><a href="rankings.html">View Rankings</a></p>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+        <div class="container">
+            <h2 class="text-center">Trusted by Professional Scouts</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"PakCricket revolutionized our scouting process. We found three
+                        district-level players in one month who are now core members of our club."</p>
+                    <p class="testimonial-author">- Asif Ali, Head Scout Lahore Royals</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The custom scouting models let me focus on specific skills we need. No
+                        more wasting time on players who don't fit our system."</p>
+                    <p class="testimonial-author">- Sara Khan, Talent Director Karachi Kings</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="container">
+            <h3>Ready to Build Your Dream Team?</h3>
+            <p>Join professional scouts who are discovering Pakistan's next cricket stars</p>
+            <div class="cta-buttons">
+                <a href="pricing.html" class="btn btn-light">View Pricing Plans</a>
+                <a href="technology.html" class="btn btn-outline">See How It Works</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>PakCricket</h4>
+                    <p>Advanced talent scouting for modern cricket clubs.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="players.html">For Players</a></li>
+                        <li><a href="scouts-clubs.html">For Scouts & Clubs</a></li>
+                        <li><a href="fans-grounds.html">For Fans & Grounds</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="rankings.html">Rankings</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company & Legal</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="privacy-policy.html#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PakCricket. A Final Year Project - University of Faisalabad.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+/* General Page Styles */
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+    
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    color: #008000;
+}
+
+.header p {
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Section Title */
+.section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #008000;
+    margin-top: 40px;
+}
+
+/* Story Boxes */
+.story-box {
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 5px;
+}
+
+.story-box h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #FF8C00;
+    margin-bottom: 10px;
+}
+
+.story-box p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+
+
+/* Testimonials Section */
+.testimonial-section {
+    
+    padding: 40px 20px;
+}
+
+.testimonial-box {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.testimonial-box p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.testimonial-box strong {
+    color: #008000;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #096114;
+    color: #FFFFFF;
+    padding: 15px 0;
+    font-size: 14px;
+}
