@@ -1,6 +1,5 @@
 
 
-/* General Styles */
 body {
     background-color: #FFFFFF;
     color: #333333;
@@ -10,7 +9,6 @@ body {
     
 }
 
-/* Header Section */
 .header {
     text-align: center;
     padding: 40px 20px;
@@ -26,26 +24,22 @@ body {
     font-size: 16px;
 }
 
-/* Section Titles */
 h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
     color: #008000;
 }
 
-/* Subheadings */
 h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     color: #FF8C00;
 }
 
-/* Paragraphs */
 p {
     font-size: 16px;
 }
 
-/* Features Section */
 .features {
     padding: 30px 50px;
 }
@@ -59,7 +53,6 @@ p {
     padding-bottom: 15px;
 }
 
-/* Call to Action */
 .cta {
     text-align: center;
     padding: 30px 20px;
@@ -84,7 +77,6 @@ p {
     color: #FFFFFF;
 }
 
-/* Footer */
 .footer {
     text-align: center;
     padding: 15px;

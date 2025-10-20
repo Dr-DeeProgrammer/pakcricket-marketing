@@ -1,4 +1,3 @@
-/* General Page Styles */
 body {
     background-color: #FFFFFF;
     color: #333333;
@@ -8,7 +7,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header Section */
 .header {
     
     text-align: center;
@@ -26,7 +24,6 @@ body {
     color: #333333;
 }
 
-/* Section Title */
 .section h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
@@ -35,7 +32,6 @@ body {
     margin-top: 40px;
 }
 
-/* Story Boxes */
 .story-box {
     border: 1px solid #CCCCCC;
     background-color: #FFFFFF;
@@ -60,7 +56,6 @@ body {
 
 
 
-/* Testimonials Section */
 .testimonial-section {
     
     padding: 40px 20px;
@@ -87,7 +82,6 @@ body {
     font-size: 16px;
 }
 
-/* Footer */
 .footer {
     text-align: center;
     background-color: #096114;
