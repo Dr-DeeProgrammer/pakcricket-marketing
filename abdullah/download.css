@@ -1,3 +1,4 @@
+
 body {
     background-color: #FFFFFF;
     color: #333333;
@@ -6,6 +7,7 @@ body {
     padding: 0;
     text-align: center;
 }
+
 
 .header {
     background-color: #F0FFF0;
@@ -24,8 +26,10 @@ body {
     color: #333333;
 }
 
+
 .download-section {
     padding: 50px 20px;
+    
 }
 
 .download-section h2 {
@@ -37,19 +41,17 @@ body {
 
 .download-section p {
     font-size: 16px;
-    margin-bottom: 30px;
 }
 
-.buttons {
-    margin-bottom: 40px;
-}
+
+
 
 .btn {
     display: inline-block;
     text-decoration: none;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
-    padding: 15px 30px;
+    padding: 20px 50px;
     border-radius: 5px;
     margin: 10px;
     border: 1px solid #CCCCCC;
@@ -73,6 +75,7 @@ body {
     background-color:#FF8C00;
 }
 
+
 .qr-section {
     
     padding: 30px 20px;
@@ -91,6 +94,7 @@ body {
     color: #333333;
 }
 
+
 .guide-section {
     padding: 40px 30px;
 }
@@ -99,13 +103,13 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
     color: #008000;
-    margin-bottom: 15px;
+    
 }
 
 .guide-section ol {
     text-align: left;
     max-width: 600px;
-    margin: 0 auto;
+    margin:  auto;
     line-height: 1.8;
     color: #333333;
     font-size: 16px;

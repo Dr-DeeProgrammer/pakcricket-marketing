@@ -5,62 +5,83 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 .section {
-    padding: 40px 60px;
+    padding: 40px 70px;
     border-bottom: 1px solid #CCCCCC;
 }
-.section:nth-child(even) {
+
+
+.about {
+    background-color: #FFFFFF;
+}
+
+.mission {
     background-color: #F0FFF0;
 }
 
+.problem {
+    background-color: #FFFFFF;
+}
+
+.solution {
+    background-color: #F0FFF0;
+}
+
+.vision {
+    background-color: #FFFFFF;
+}
+
+.story {
+    background-color: #F0FFF0;
+}
+
+.values {
+    background-color: #FFFFFF;
+}
+
+
 h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 48px;
     color: #008000;
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 40px;
+
+    
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 36px;
     color: #008000;
-    margin-bottom: 10px;
+    font-size: 28px;
+    
 }
+
+
 p {
     font-size: 16px;
-    line-height: 1.6;
+   line-height: 1.7;
 }
+
+
 ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 li {
     font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
+
+
 strong {
     color: #FF8C00;
 }
+
+
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #F0FFF0;
-    font-size: 14px;
-    color: #f8fdf9;
     background-color: #096114;
-}
-button {
-    background-color: #6f1fba;
-    color: #ce1dc2;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #3016d7;
+    font-size: 14px;
+    color: #eeecec;
 }
